@@ -5,9 +5,6 @@ This project is a take home assignment for Mechanism
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.  This should be all you need to run it.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
 ### `firebase serve`
 This will run the functions locally which will retrieve and update the stocks for a given user.
 
@@ -23,4 +20,3 @@ Some assumptions were made:
 6.  Did not add delete stock functionality.
 7.  Small bug on changing users.  But left for now as the core idea is there.
 8.  Basic UI to show overall theme.
-

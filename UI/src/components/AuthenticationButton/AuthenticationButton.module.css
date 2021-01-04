@@ -1,0 +1,51 @@
+.Button {
+  margin: 10px 20px !important;
+}
+
+.Container {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.Divider {
+  margin: 0 10px !important;
+}
+
+.Popper {
+  background-color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  border: grey 1px solid;
+  border-radius: 8px;
+  margin-left: 20px;
+  max-width: 400px;
+  margin-top: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 62px - 100px);
+  margin: 12px 0;
+  right: 0;
+}
+
+h2,
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.PopperAvatar {
+  width: 120px !important;
+  height: 120px !important;
+}
+
+.PopperContent {
+  display: flex;
+  align-self: center;
+  padding-top: 10px;
+}
+
+.UserName {
+  align-self: center;
+  padding-right: 10px;
+}

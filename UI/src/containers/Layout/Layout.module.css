@@ -1,0 +1,51 @@
+/* Parent container to house entire layout */
+.Container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 315px;
+  grid-template-areas:
+    'header header header header header header'
+    'subheader subheader subheader subheader subheader subheader'
+    '. main main main main main'
+    '. main main main main main';
+}
+
+.Main {
+  grid-area: main;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 100px; /* For mobile devices for some extra space near end of scroll */
+  margin: 30px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .Main {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+  }
+}
+
+.Header {
+  grid-area: subheader;
+}
+
+@media only screen and (min-width: 960px) {
+  .Header {
+    grid-column: 2 / -1;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .Container {
+    grid-template-areas:
+      'header header header header header header'
+      'subheader subheader subheader subheader subheader subheader'
+      'main main main main main main'
+      'main main main main main main';
+  }
+}
+
+.Menu {
+  grid-area: menu;
+}

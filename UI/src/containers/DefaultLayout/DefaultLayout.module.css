@@ -1,0 +1,24 @@
+.Container {
+  background-color: #004aac;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 100vh;
+}
+
+.Content {
+  align-content: center;
+  background-color: white;
+  display: grid;
+  grid-area: 2 / 2 / 10 / 12;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Img {
+  justify-self: center;
+  max-width: 100%;
+  max-height: 100%;
+}

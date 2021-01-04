@@ -20,4 +20,7 @@ Some assumptions were made:
 3.  The api used to retrieve the data isnt perfect.  It could become a complicated calculation to determine when stocks were added, and trying to figure out work out the overall benefit or not of whether investing in the market would have been more successful.  Having said that, the base graph assumes 1 yr data and even the portfolio was added that day.
 4.  Since your portfolio stocks may not have been purchased at market, do not enforce market conditions for that day.
 5.  Instead of managing users fully, used a federated google login.  Saved time and also personally i find it much more useful.
+6.  Did not add delete stock functionality.
+7.  Small bug on changing users.  But left for now as the core idea is there.
+8.  Basic UI to show overall theme.
 

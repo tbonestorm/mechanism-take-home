@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import JwtContext from '../providers/JwtContext';
 import _ from 'lodash';
 import firebase from "firebase/app";
@@ -7,7 +7,6 @@ const useAppJwt = () => {
   const { appToken, setAppToken } = useContext(JwtContext);
   const [user, setUser] = useState({});
 
- useEffect(() => {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       setUser(user);
@@ -27,8 +26,6 @@ const useAppJwt = () => {
       });
     }
   });
- }, [setAppToken])
-
 
   function isAuthenticated() {
     return !_.isUndefined(firebase.auth().currentUser);

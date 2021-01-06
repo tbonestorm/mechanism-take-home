@@ -42,8 +42,6 @@ const AddTicker = ({ open, handleClose, children }) => {
 
     return (
         <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
         open={open}
         className={classes.modal}
         onClose={handleClose}
@@ -55,7 +53,7 @@ const AddTicker = ({ open, handleClose, children }) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">Add a stock</h2>
+            <h2>Add a stock</h2>
             <TextField inputRef={register({ required: true})} label="Ticker Symbol" name="ticker" />
             <TextField inputRef={register({ required: true})} label="Number of Stocks" name="units" />
             <TextField inputRef={register({ required: true})} label="Purchase value" name="purchaseValue" />

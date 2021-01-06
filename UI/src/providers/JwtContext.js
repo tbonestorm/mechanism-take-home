@@ -1,10 +1,6 @@
 /* eslint-disable global-require */
 import React, { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
-/*
-  Section Context will be used in order to keep track of which section is active, which step is selected and how many steps
-  there are.
-*/
 
 const JwtContext = createContext({
   appToken: '',
